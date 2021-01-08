@@ -91,8 +91,5 @@ export [tablename] [path/to/exported/file.csv]
 
 ```
 
-## Example
-
-
 ## Contact
 Mohamed Shapan [@m7shapan](https://twitter.com/M7Shapan)
