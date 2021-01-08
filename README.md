@@ -12,7 +12,7 @@ it's started with this task that I need to merge 30 CSV file into one file and g
 
 ## Install
 ```bash
-go install github.com/m7shapan/querycsv
+go get github.com/m7shapan/querycsv
 ```
 
 ## How to use
