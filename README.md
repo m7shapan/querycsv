@@ -14,6 +14,7 @@ it's started with this task that I need to merge 30 CSV file into one file and g
 ```bash
 go get github.com/m7shapan/querycsv
 ```
+or download [Binaries from releases page](https://github.com/m7shapan/querycsv/releases)
 
 ## How to use
 
