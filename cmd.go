@@ -58,3 +58,11 @@ func selectCMD(words []string) {
 		return
 	}
 }
+
+func selectAppendCMD(words []string) {
+	err := appendToTableFromQuery(words[0], strings.Join(words[2:], " "))
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+}

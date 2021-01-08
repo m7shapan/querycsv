@@ -74,9 +74,10 @@ func main() {
 			loadCMD(words)
 			continue
 		case len(words) >= 3 && words[1] == "=" && words[2] == "select":
-
-		case len(words) >= 3 && words[1] == "+=" && words[2] == "select":
 			selectCMD(words)
+			continue
+		case len(words) >= 3 && words[1] == "+=" && words[2] == "select":
+			selectAppendCMD(words)
 			continue
 		default:
 			fmt.Println("no such command supported")
