@@ -15,8 +15,13 @@ it's started with this task that I need to merge 30 CSV file into one file and g
 go install github.com/m7shapan/querycsv
 ```
 
-## how to use
-commands
+## How to use
+<div align="center">
+<img src="example.png">
+</div>
+<br>
+
+### Commands
 
 ```
 load [file.csv]    load only one file or all directory files in case of directory all files should be of the same csv structure
@@ -42,9 +47,8 @@ export [tablename] [path/to/exported/file.csv]
 
 ```
 
-### example
-<div align="center">
-<img src="example.png">
-</div>
-<br>
+## Example
 
+
+## Contact
+Mohamed Shapan [@m7shapan](https://twitter.com/M7Shapan)
