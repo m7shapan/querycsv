@@ -16,10 +16,54 @@ go install github.com/m7shapan/querycsv
 ```
 
 ## How to use
-<div align="center">
-<img src="example.png">
-</div>
-<br>
+
+```
+➜ firstgroup = load group_a.csv
+- loading file group_a.csv
++---------+-----+
+|  name   | age |
++---------+-----+
+| Mohamed |  26 |
+| Asma    |  26 |
+| Ahmed   |  23 |
++---------+-----+
+➜ secondgroup = load group_b.csv
+- loading file group_b.csv
++---------+-----+
+|  name   | age |
++---------+-----+
+| mahmoud |  24 |
+| sara    |  22 |
+| khaled  |  23 |
++---------+-----+
+➜ groups = select * from firstgroup
+➜ groups += select name, age from secondgroup
+➜ show groups 10
++---------+-----+
+|  name   | age |
++---------+-----+
+| Mohamed |  26 |
+| Asma    |  26 |
+| Ahmed   |  23 |
+| mahmoud |  24 |
+| sara    |  22 |
+| khaled  |  23 |
++---------+-----+
+➜ group_by_age = select age, count(*) as count from groups group by age
+➜ show group_by_age
+error: wrong number of command parameters expected 2, found 1
+➜ show group_by_age 10
++-----+-------+
+| age | count |
++-----+-------+
+|  22 |     1 |
+|  23 |     2 |
+|  24 |     1 |
+|  26 |     2 |
++-----+-------+
+➜ export group_by_age final_group.csv
+file exported
+```
 
 ### Commands
 
