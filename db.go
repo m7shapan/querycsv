@@ -88,7 +88,7 @@ func tableSelect(table string, limit int) (headerColumns []string, rows [][]stri
 		sql = fmt.Sprintf("%s LIMIT %d", sql, limit)
 	}
 
-	dbRows, err := db.Queryx(fmt.Sprintf("SELECT * FROM %s LIMIT %d", table, limit))
+	dbRows, err := db.Queryx(sql)
 	if err != nil {
 		return
 	}
